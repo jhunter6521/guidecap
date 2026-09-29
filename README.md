@@ -58,7 +58,12 @@ npm run screenshots
 ```
 On a minimal WSL install, Chrome may need `sudo apt install libnss3 libasound2t64`.
 
-## Privacy policy
+## Website (landing page + privacy policy)
 
-Hosted at https://freelance-calculator.jhunter6521.workers.dev/guidecap/privacy
-(source: `freelance_calculator/public/guidecap/privacy.html`).
+`site/` is a small static site, deployed to Cloudflare as the Worker `guidecap`
+(see `wrangler.jsonc`, which serves only that folder). Every push to `main` redeploys it.
+
+- Home: https://guidecap.jhunter6521.workers.dev
+- Privacy policy: https://guidecap.jhunter6521.workers.dev/privacy
+
+Once the Chrome Web Store listing is approved, paste its link into `STORE_URL` in `site/index.html`.

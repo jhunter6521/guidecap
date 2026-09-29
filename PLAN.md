@@ -23,7 +23,9 @@ Everything else has been done by Claude.
 
 - [x] Build the extension (v0.1.0) and test it end-to-end in headless Chrome
 - [x] Store listing text, screenshots, promo tile ([STORE_LISTING.md](STORE_LISTING.md), `store/out/`)
-- [x] Privacy policy page (hosted on the existing Cloudflare site)
+- [x] Landing page + privacy policy in `site/`
+- [ ] **You:** in Cloudflare, go to Workers & Pages → Create → Import a repository → `jhunter6521/guidecap`,
+      with project name `guidecap`. Leave the build settings at their defaults; `wrangler.jsonc` handles them.
 - [ ] **You:** try it in Chrome (Load unpacked, see README). About 5 minutes.
 - [ ] **You:** create an ExtensionPay account at extensionpay.com, connect Stripe, and
       register the extension with ID **`guidecap`**. Add a plan: **$29, one-time**.

@@ -62,7 +62,7 @@ Tip: press Alt+Shift+R to start and stop recording.
 - If the form treats local-only data as not collected, you can leave everything unchecked. Either way, certify all three statements: not sold, not used for unrelated purposes, not used for creditworthiness.
 
 **Privacy policy URL:**
-> https://freelance-calculator.jhunter6521.workers.dev/guidecap/privacy
+> https://guidecap.jhunter6521.workers.dev/privacy
 
 ## Distribution tab
 - Visibility: **Public**

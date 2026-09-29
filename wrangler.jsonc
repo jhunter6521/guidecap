@@ -1,0 +1,9 @@
+{
+  // Cloudflare serves only ./site (landing page + privacy policy).
+  // The extension code and plans in this repo are never published.
+  "name": "guidecap",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./site"
+  }
+}
