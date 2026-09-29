@@ -21,10 +21,11 @@ PERFECT FOR
 • SOPs and onboarding docs for new team members
 • Bug reports and QA steps
 • Showing a client or family member exactly where to click
+• Replacing Windows Steps Recorder (PSR), which Microsoft has deprecated, for anything you do in the browser
 
 PRIVATE BY DESIGN
 • Your guides never leave your computer. There's no cloud, no account and no upload.
-• Guidecap never records what you type into fields.
+• Guidecap never records your keystrokes, so passwords and other typed text never end up in a guide.
 • No analytics, no tracking, no ads.
 
 FREE
@@ -33,7 +34,7 @@ FREE
 • Export to HTML, or print / save as PDF
 
 GUIDECAP PRO: ONE-TIME $29, NO SUBSCRIPTION
-• Redact: black out passwords, emails, API keys and customer data in screenshots
+• Redact: black out passwords, emails, API keys and customer data in screenshots. Guidecap uses solid boxes, not blur, because blurred text can sometimes be recovered.
 • Markdown export (.zip with images) for GitHub, Confluence, Notion or any wiki
 • No "Made with Guidecap" footer on exports
 
