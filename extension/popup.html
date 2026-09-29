@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Guidecap</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { width: 280px; padding: 16px; margin: 0; }
+  h1 { font-size: 1rem; margin: 0 0 4px; display: flex; align-items: center; gap: 8px; }
+  h1 img { width: 20px; height: 20px; }
+  p { margin: 0 0 14px; color: var(--muted); font-size: .85rem; }
+  .btn { width: 100%; margin-bottom: 8px; }
+  .rec { color: var(--danger); font-weight: 600; }
+  .err { color: var(--danger); font-size: .85rem; margin: 0 0 10px; }
+  .foot { display: flex; justify-content: space-between; font-size: .8rem; margin-top: 6px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+  <h1><img src="icons/icon32.png" alt="">Guidecap</h1>
+
+  <section id="idle">
+    <p>Click record, then do the task in this tab. Every click becomes a step with a screenshot.</p>
+    <p class="err" id="err" hidden></p>
+    <button class="btn primary" id="start">● Start recording</button>
+  </section>
+
+  <section id="busy" hidden>
+    <p><span class="rec">● Recording</span> · <span id="count">0</span> steps so far</p>
+    <button class="btn danger" id="stop">■ Stop and edit guide</button>
+  </section>
+
+  <div class="foot">
+    <a href="editor.html" target="_blank" id="guides">My guides</a>
+    <span class="muted">Alt+Shift+R starts/stops</span>
+  </div>
+<script src="popup.js"></script>
+</body>
+</html>

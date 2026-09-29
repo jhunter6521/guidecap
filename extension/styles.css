@@ -1,0 +1,29 @@
+:root {
+  --bg: #f6f7f9; --panel: #ffffff; --ink: #161a21; --muted: #5d6675; --line: #dfe3ea;
+  --accent: #2563eb; --accent-ink: #ffffff; --danger: #d93036; --pro: #7c3aed;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111418; --panel: #1a1e25; --ink: #e8ebf0; --muted: #9aa3b2; --line: #2c323c;
+    --accent: #6d9dff; --accent-ink: #0b1020; --danger: #ff6b6f; --pro: #b794f6;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--accent); }
+.muted { color: var(--muted); }
+button, .btn {
+  font: inherit; font-weight: 600; cursor: pointer; border-radius: 8px; padding: 8px 14px;
+  border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+}
+button:hover { border-color: var(--muted); }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+button.danger { background: var(--danger); border-color: var(--danger); color: #fff; }
+button.small { padding: 4px 10px; font-size: .85rem; }
+.pro-tag {
+  font-size: .68rem; font-weight: 700; letter-spacing: .04em; color: var(--pro);
+  border: 1px solid var(--pro); border-radius: 4px; padding: 0 4px; margin-left: 6px; vertical-align: 1px;
+}

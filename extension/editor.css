@@ -1,0 +1,71 @@
+body { margin: 0; }
+.bar {
+  position: sticky; top: 0; z-index: 5; display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 24px; background: var(--panel); border-bottom: 1px solid var(--line);
+}
+.brand { display: flex; align-items: center; gap: 8px; font-weight: 700; color: var(--ink); text-decoration: none; }
+.brand img { width: 22px; height: 22px; }
+.bar-right { display: flex; align-items: center; gap: 12px; font-size: .9rem; }
+main { max-width: 900px; margin: 0 auto; padding: 28px 24px 80px; }
+
+/* list view */
+.list-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px; }
+.list-head h1 { margin: 0; font-size: 1.5rem; }
+.guide-row {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px;
+}
+.guide-row a { font-weight: 600; text-decoration: none; }
+.guide-row .meta { color: var(--muted); font-size: .85rem; }
+.empty, .welcome {
+  background: var(--panel); border: 1px dashed var(--line); border-radius: 10px; padding: 28px; text-align: center; color: var(--muted);
+}
+.welcome { border-style: solid; text-align: left; color: var(--ink); margin-bottom: 20px; }
+.welcome h2 { margin-top: 0; }
+
+/* guide view */
+.guide-title {
+  width: 100%; font: inherit; font-size: 1.7rem; font-weight: 700; color: var(--ink);
+  background: transparent; border: 1px solid transparent; border-radius: 8px; padding: 4px 8px; margin: 0 0 12px -9px;
+}
+.guide-title:hover, .guide-title:focus { border-color: var(--line); background: var(--panel); }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.toolbar .spacer { flex: 1; }
+.toolbar button { padding: 6px 12px; font-size: .9rem; }
+.step { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px; margin-bottom: 18px; }
+.step-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.num {
+  flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: var(--accent-ink);
+  display: grid; place-items: center; font-weight: 700; font-size: .9rem;
+}
+.step-title {
+  flex: 1; min-width: 0; font: inherit; font-weight: 600; color: var(--ink); background: transparent;
+  border: 1px solid transparent; border-radius: 6px; padding: 5px 8px;
+}
+.step-title:hover, .step-title:focus { border-color: var(--line); background: var(--bg); }
+.step-tools { display: flex; gap: 4px; flex: none; }
+.step-tools button { padding: 4px 9px; font-size: .85rem; }
+.step canvas { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line); }
+.step canvas.redacting { cursor: crosshair; outline: 3px solid var(--pro); }
+.hint { font-size: .85rem; color: var(--pro); margin: 8px 0 0; }
+
+dialog {
+  border: 1px solid var(--line); border-radius: 14px; background: var(--panel); color: var(--ink);
+  max-width: 460px; padding: 24px;
+}
+dialog::backdrop { background: rgb(0 0 0 / .45); }
+dialog h2 { margin-top: 0; }
+dialog li { margin-bottom: 6px; }
+.dialog-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 18px; }
+.small-print { font-size: .82rem; margin: 14px 0 0; }
+
+#print { display: none; }
+@media print {
+  .app, dialog { display: none !important; }
+  #print { display: block; color: #000; background: #fff; font: 12pt/1.45 system-ui, sans-serif; }
+  body { background: #fff; }
+  #print h1 { font-size: 20pt; }
+  #print li { break-inside: avoid; margin-bottom: 18pt; }
+  #print img { max-width: 100%; border: 1px solid #ccc; }
+  #print .footer { color: #777; font-size: 9pt; margin-top: 24pt; }
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guidecap</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="editor.css">
+</head>
+<body>
+<div class="app">
+  <header class="bar">
+    <a class="brand" href="editor.html"><img src="icons/icon32.png" alt="">Guidecap</a>
+    <div class="bar-right">
+      <span id="proStatus" class="muted"></span>
+      <button id="upgradeBtn" class="small" hidden>Get Pro <span class="pro-tag">PRO</span></button>
+    </div>
+  </header>
+
+  <main id="main"></main>
+</div>
+
+<div id="print" aria-hidden="true"></div>
+
+<dialog id="upgrade">
+  <h2>Guidecap Pro</h2>
+  <p>A one-time <b id="price"></b> purchase. No subscription, and your guides still never leave your computer.</p>
+  <ul>
+    <li><b>Redact</b>: black out passwords, emails and customer data in screenshots</li>
+    <li><b>Markdown export</b>: a .zip with images, ready for GitHub, Confluence, Notion or a wiki</li>
+    <li><b>No "Made with Guidecap" footer</b> on exported guides</li>
+  </ul>
+  <div class="dialog-actions">
+    <button id="closeUpgrade">Not now</button>
+    <button id="buy" class="primary">Get Pro</button>
+  </div>
+  <p class="muted small-print">Already bought it? <a href="#" id="login">Log in to restore Pro</a></p>
+</dialog>
+
+<script src="ExtPay.js"></script>
+<script src="config.js"></script>
+<script src="zip.js"></script>
+<script src="editor.js"></script>
+</body>
+</html>
