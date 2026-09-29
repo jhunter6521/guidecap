@@ -60,5 +60,5 @@ On a minimal WSL install, Chrome may need `sudo apt install libnss3 libasound2t6
 
 ## Privacy policy
 
-Hosted at https://freelance-calculator.jhunter6521.workers.dev/guidecap/privacy.html
+Hosted at https://freelance-calculator.jhunter6521.workers.dev/guidecap/privacy
 (source: `freelance_calculator/public/guidecap/privacy.html`).
