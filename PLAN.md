@@ -31,7 +31,7 @@ Everything else has been done by Claude.
 - [ ] **You:** register as a Chrome Web Store developer ($5 one-time), upload
       `dist/guidecap-0.1.0.zip`, and paste in the text and images from STORE_LISTING.md.
       Review usually takes a few days.
-- [ ] **You:** create an empty GitHub repo `guidecap` so Claude can push the code.
+- [x] GitHub repo: github.com/jhunter6521/guidecap
 
 ## After launch (Claude can do these)
 - **Store search:** refine the listing wording based on what brings installs.
