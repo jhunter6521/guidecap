@@ -48,8 +48,7 @@ The store listing text is in [STORE_LISTING.md](STORE_LISTING.md).
 These need Node and Puppeteer (`npm install`). Both scripts load the real extension in headless Chrome.
 
 ```bash
-# end-to-end test: record, edit, export
-(cd tests/site && python3 -m http.server 8765) &
+# end-to-end test: record, edit, export. Serves tests/site itself; exits 1 if any check fails.
 npm test
 
 # regenerate the store images into store/out/
